@@ -5,9 +5,11 @@ import "fmt"
 const (
 	french             = "French"
 	spanish            = "Spanish"
+	italian            = "Italian"
 	englishHelloPrefix = "Hello"
 	spanishHelloPrefix = "Hola"
 	frenchHelloPrefix  = "Bonjour"
+	italianHelloPrefix = "Ciao"
 )
 
 func main() {
@@ -26,6 +28,8 @@ func Hello(name, language string) string {
 		prefix = spanishHelloPrefix
 	case french:
 		prefix = frenchHelloPrefix
+	case italian:
+		prefix = italianHelloPrefix
 	}
 
 	return fmt.Sprintf("%s %s!", prefix, name)
